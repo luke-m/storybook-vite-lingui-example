@@ -9,13 +9,20 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "messages:extract": "lingui extract",
+    "messages:compile": "lingui compile"
   },
   "dependencies": {
+    "@lingui/react": "^4.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@lingui/cli": "^4.5.0",
+    "@lingui/macro": "^4.5.0",
+    "@lingui/swc-plugin": "^4.0.4",
+    "@lingui/vite-plugin": "^4.5.0",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-interactions": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
